@@ -8,12 +8,12 @@ public class Main {
         m1.setElement(0, 1, 1);
         m1.setElement(1, 0, 1);
         m1.setElement(1, 1, 0);
+        System.out.println(m1);
         for (int i = 0; i < 9; i++){
             m1 = m1.product(m2);
             System.out.println(m1);
         }
         String st = m1.toString();
         System.out.println(st);
-        //tst commit
     }
 }
