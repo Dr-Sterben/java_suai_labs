@@ -1,20 +1,33 @@
-package ru.labs.lab03;
+package ru.labs.lab03.matrixes;
 
 public class Matrix {
-    protected int n;
-    protected int m;
+    protected final int n;
+    protected final int m;
     protected int[][] matrix = null;
 
     public Matrix(int n, int m) {
         this.n = n;
         this.m = m;
         matrix = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = 0;
+            }
+        }
     }
     public Matrix(int n) {
         this(n, n);
+        matrix = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] = 0;
+            }
+        }
     }
     public Matrix() {
         this(1, 1);
+        matrix = new int[1][1];
+        matrix[0][0] = 0;
     }
 
     public int getN() {

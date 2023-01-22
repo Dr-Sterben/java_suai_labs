@@ -1,11 +1,15 @@
-package ru.labs.lab03;
+package ru.labs.lab03.matrixes;
 
-public class SquareMatrix extends Matrix{
+public class SquareMatrix extends Matrix {
     public SquareMatrix(int n) {
         super(n, n);
+        for (int i = 0; i < n; i++) {
+            matrix[i][i] = 1;
+        }
     }
     public SquareMatrix() {
         super();
+        matrix[0][0] = 1;
     }
     public SquareMatrix sum(SquareMatrix matrix) {
         SquareMatrix result = new SquareMatrix(n);

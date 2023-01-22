@@ -1,4 +1,4 @@
-package ru.labs.lab03;
+package ru.labs.lab03.matrixes;
 
 public class MatrixExeptions extends RuntimeException{
     private String Message;
