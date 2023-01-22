@@ -4,6 +4,7 @@
 out/
 .idea/
 .idea_modules/
+tests/
 *.iml
 *.ipr
 *.iws
