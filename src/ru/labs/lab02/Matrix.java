@@ -26,6 +26,10 @@ public class Matrix {
         return matrix[i][j];
     }
 
+    public int getN(){
+        return n;
+    }
+
     public Matrix sum(Matrix m) {
         Matrix result = new Matrix(n);
         for (int i = 0; i < n; i++) {
@@ -61,5 +65,4 @@ public class Matrix {
         }
         return sb.toString();
     }
-
 }

@@ -40,5 +40,7 @@ public class Main {
         System.out.println(sm2);
         System.out.println(sm1.sum(sm2));
         System.out.println(sm1.product(sm2));
+        System.out.println(sm1.equals(sm2));
+        System.out.println(sm1.equals(sm1));
     }
 }

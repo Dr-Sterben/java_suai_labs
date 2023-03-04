@@ -84,5 +84,17 @@ public class Matrix {
         }
         return result.toString();
     }
-
+    public boolean equals(Matrix matrix) {
+        if (this.n != matrix.getN() || this.m != matrix.getM()) {
+            return false;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (this.getElement(i, j) != matrix.getElement(i, j)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
